@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RecipesApp</string>
+    <string name="failed_message">Failed to get the data</string>
 </resources>

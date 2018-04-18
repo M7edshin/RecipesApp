@@ -1312,6 +1312,10 @@
         "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b650178a00f4b90aabaa9ed19fa5b252\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\M7edShin\\Android Development\\Android Advanced Nanodegree Projects\\RecipesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_recipe_recycler_item.xml.flat",
+        "source": "D:\\M7edShin\\Android Development\\Android Advanced Nanodegree Projects\\RecipesApp\\app\\src\\main\\res\\layout\\recipe_recycler_item.xml"
+    },
+    {
         "merged": "D:\\M7edShin\\Android Development\\Android Advanced Nanodegree Projects\\RecipesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b650178a00f4b90aabaa9ed19fa5b252\\res\\drawable-ldrtl-hdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },

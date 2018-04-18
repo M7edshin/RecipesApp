@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -16,18 +15,17 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import shahin.recipesapp.adapters.RecipeRecyclerAdapter;
 import shahin.recipesapp.models.Recipe;
-import shahin.recipesapp.remote.RetrofitClient;
-import shahin.recipesapp.remote.SOService;
+import shahin.recipesapp.network.RetrofitApiClient;
+import shahin.recipesapp.network.ApiRetrofitInterface;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.rv_recipes)
-    RecyclerView rv_recipes;
+    @BindView(R.id.rv_recipes) RecyclerView rv_recipes;
 
     private RecipeRecyclerAdapter recipeRecyclerAdapter;
     private ArrayList<Recipe> recipesList;
 
-    private SOService soService;
+    private ApiRetrofitInterface apiRetrofitInterface;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadRecipes(){
 
-        soService = RetrofitClient.getClient().create(SOService.class);
+        apiRetrofitInterface = RetrofitApiClient.getClient().create(ApiRetrofitInterface.class);
 
-        Call<ArrayList<Recipe>> call = soService.getRecipe();
+        Call<ArrayList<Recipe>> call = apiRetrofitInterface.getRecipe();
 
         call.enqueue(new Callback<ArrayList<Recipe>>() {
             @Override
@@ -54,12 +52,11 @@ public class MainActivity extends AppCompatActivity {
                 recipesList = response.body();
                 recipeRecyclerAdapter = new RecipeRecyclerAdapter(recipesList);
                 rv_recipes.setAdapter(recipeRecyclerAdapter);
-                Toast.makeText(getApplicationContext(), "Wow done 100%", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onFailure(Call<ArrayList<Recipe>> call, Throwable t) {
-                Toast.makeText(getApplicationContext(), "Big Failure", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.failed_message, Toast.LENGTH_SHORT).show();
             }
         });
 
