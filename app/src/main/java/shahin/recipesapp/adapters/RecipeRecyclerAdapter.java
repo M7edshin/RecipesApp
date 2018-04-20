@@ -15,10 +15,10 @@ import shahin.recipesapp.models.Recipe;
 
 public class RecipeRecyclerAdapter extends RecyclerView.Adapter<RecipeRecyclerAdapter.RecipeHolder>{
 
-    ArrayList<Recipe> recipeList;
+    ArrayList<Recipe> recipeArrayList;
 
-    public RecipeRecyclerAdapter(ArrayList<Recipe> recipeList){
-        this.recipeList = recipeList;
+    public RecipeRecyclerAdapter(ArrayList<Recipe> recipeArrayList){
+        this.recipeArrayList = recipeArrayList;
     }
 
     @NonNull
@@ -30,13 +30,13 @@ public class RecipeRecyclerAdapter extends RecyclerView.Adapter<RecipeRecyclerAd
 
     @Override
     public void onBindViewHolder(@NonNull RecipeHolder holder, int position) {
-        Recipe recipe = recipeList.get(position);
+        Recipe recipe = recipeArrayList.get(position);
         holder.tv_recipe_name.setText(recipe.getName());
     }
 
     @Override
     public int getItemCount() {
-        return recipeList.size();
+        return recipeArrayList.size();
     }
 
 
