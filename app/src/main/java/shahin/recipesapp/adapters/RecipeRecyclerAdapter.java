@@ -15,7 +15,7 @@ import shahin.recipesapp.models.Recipe;
 
 public class RecipeRecyclerAdapter extends RecyclerView.Adapter<RecipeRecyclerAdapter.RecipeHolder>{
 
-    ArrayList<Recipe> recipeArrayList;
+    private ArrayList<Recipe> recipeArrayList;
 
     public RecipeRecyclerAdapter(ArrayList<Recipe> recipeArrayList){
         this.recipeArrayList = recipeArrayList;

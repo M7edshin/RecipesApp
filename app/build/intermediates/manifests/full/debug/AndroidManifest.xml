@@ -27,6 +27,7 @@
             </intent-filter>
         </activity>
         <activity android:name="shahin.recipesapp.StepsActivity" />
+        <activity android:name="shahin.recipesapp.StepDetailsActivity" />
     </application>
 
 </manifest>

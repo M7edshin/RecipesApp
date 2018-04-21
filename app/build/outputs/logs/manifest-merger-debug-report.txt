@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\b650178a00f4b90aabaa9ed19fa5b252\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\fb81c8c7443947ace86d8a6dc2dc0ed6\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\2c297783fea57a1f41eae6ceaa8a684f\AndroidManifest.xml:17:1-22:12
@@ -18,20 +18,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\M7edS\.gradle\
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\f97f9d57c3f21c79dbb6f88e4c7ab5ff\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\6e6f64cb6d9dc24449d07a88d3897026\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9e850d98688420e381544584bc827d77\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -40,7 +40,7 @@ ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\
 	android:name
 		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:7:5-22:19
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:7:5-23:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\fb81c8c7443947ace86d8a6dc2dc0ed6\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\fb81c8c7443947ace86d8a6dc2dc0ed6\AndroidManifest.xml:9:5-20
 	android:supportsRtl
@@ -70,9 +70,13 @@ ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\
 	android:name
 		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:18:27-74
 activity#shahin.recipesapp.StepsActivity
-ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:21:9-60
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:21:9-51
 	android:name
 		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:21:19-48
+activity#shahin.recipesapp.StepDetailsActivity
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:22:9-56
+	android:name
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:22:19-54
 uses-sdk
 INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml

@@ -3,7 +3,7 @@ package shahin.recipesapp.network;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static shahin.recipesapp.Utilities.Constants.API_BASE_URL;
+import static shahin.recipesapp.utilities.Constants.API_BASE_URL;
 
 public class RetrofitApiClient {
 

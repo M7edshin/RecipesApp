@@ -1,4 +1,6 @@
 <resources>
-    <string name="app_name">RecipesApp</string>
+    <string name="app_name">Recipes</string>
     <string name="failed_message">Failed to get the data</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="image_view_recipe">Image view recipe</string>
 </resources>
