@@ -3,4 +3,10 @@
     <string name="failed_message">Failed to get the data</string>
     <string name="placeholder">Placeholder</string>
     <string name="image_view_recipe">Image view recipe</string>
+    <string name="ingredients_steps">Ingredients-Steps</string>
+    <string name="step_details">Step details</string>
+    <string name="widget_it">Widget it</string>
+    <string name="add_widget">Add widget</string>
+    <string name="steps">Steps</string>
+    <string name="widget_now">It\'s widget now</string>
 </resources>

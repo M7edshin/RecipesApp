@@ -1,37 +1,45 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\b650178a00f4b90aabaa9ed19fa5b252\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\fb81c8c7443947ace86d8a6dc2dc0ed6\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\2c297783fea57a1f41eae6ceaa8a684f\AndroidManifest.xml:17:1-22:12
 MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\4bdc8a9b9cf32d60c2ec49d80a50809e\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.exoplayer:exoplayer:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-r2.5.1.aar\06309dc6599ced5cc536a46ea47bcc43\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\d72ab45205632b22f094c9cca2c9cf3b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.test.espresso:espresso-idling-resource:3.0.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\espresso-idling-resource-3.0.1.aar\bc593e0107b61951206541a44d13eea9\AndroidManifest.xml:17:1-21:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7fa001845a5269cfaa924e2b1d2757e4\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\27395976437a23d1361fa92ed6211789\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\adf43abfd544f7e9691f47645c845ea7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\05fc50e70c36165c58ca6ab614fda62a\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fe1888e7d2e4e253b003f0b19b93612e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\adf43abfd544f7e9691f47645c845ea7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-dash-r2.5.1.aar\f135841ed490e978a5dc03db13356ebd\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-hls-r2.5.1.aar\fd78416801fc941b5e47241b8ebf5519\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-smoothstreaming-r2.5.1.aar\bc83660d88cf6cd307031ad9abc3069f\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-ui-r2.5.1.aar\9d796db1bfa660acaedcd6c1ae48681e\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-core-r2.5.1.aar\d46c598aab8c238f3db704d5c4ddae90\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\05fc50e70c36165c58ca6ab614fda62a\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\fc8731a351ae071befa0191255405338\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\a4cec8fbb77263c31ee043fa9588b457\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\f97f9d57c3f21c79dbb6f88e4c7ab5ff\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\6e6f64cb6d9dc24449d07a88d3897026\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9e850d98688420e381544584bc827d77\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -40,43 +48,73 @@ ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\
 	android:name
 		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:7:5-23:19
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:7:5-43:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\fb81c8c7443947ace86d8a6dc2dc0ed6\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\fb81c8c7443947ace86d8a6dc2dc0ed6\AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
 		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:10:9-41
-	android:roundIcon
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
 		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
 		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:12:9-40
 activity#shahin.recipesapp.MainActivity
-ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:14:9-20:20
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:13:9-19:20
 	android:name
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:14:19-47
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:13:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:17:27-74
 activity#shahin.recipesapp.StepsActivity
-ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:21:9-51
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:20:9-23:58
+	android:parentActivityName
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:23:13-55
+	android:label
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:22:13-54
 	android:name
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:21:19-48
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:21:13-42
 activity#shahin.recipesapp.StepDetailsActivity
-ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:22:9-56
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:24:9-27:59
+	android:parentActivityName
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:27:13-56
+	android:label
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:26:13-49
 	android:name
-		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:22:19-54
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:25:13-48
+receiver#shahin.recipesapp.widget.RecipeWidgetProvider
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:29:9-37:20
+	android:name
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:29:19-62
+intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:30:13-32:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:31:17-84
+	android:name
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:31:25-81
+meta-data#android.appwidget.provider
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:34:13-36:62
+	android:resource
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:36:17-59
+	android:name
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:35:17-58
+service#shahin.recipesapp.widget.WidgetRemoteViewsService
+ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:39:9-41:40
+	android:exported
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:41:13-37
+	android:permission
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:40:13-69
+	android:name
+		ADDED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml:39:18-65
 uses-sdk
 INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\M7edShin\Android Development\Android Advanced Nanodegree Projects\RecipesApp\app\src\main\AndroidManifest.xml
@@ -89,16 +127,32 @@ MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\M7edS\.gradle\
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\2c297783fea57a1f41eae6ceaa8a684f\AndroidManifest.xml:20:5-44
 MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\4bdc8a9b9cf32d60c2ec49d80a50809e\AndroidManifest.xml:5:5-43
 MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\4bdc8a9b9cf32d60c2ec49d80a50809e\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.exoplayer:exoplayer:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-r2.5.1.aar\06309dc6599ced5cc536a46ea47bcc43\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-r2.5.1.aar\06309dc6599ced5cc536a46ea47bcc43\AndroidManifest.xml:21:5-23:41
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\d72ab45205632b22f094c9cca2c9cf3b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\d72ab45205632b22f094c9cca2c9cf3b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.test.espresso:espresso-idling-resource:3.0.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\espresso-idling-resource-3.0.1.aar\bc593e0107b61951206541a44d13eea9\AndroidManifest.xml:19:3-70
+MERGED from [com.android.support.test.espresso:espresso-idling-resource:3.0.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\espresso-idling-resource-3.0.1.aar\bc593e0107b61951206541a44d13eea9\AndroidManifest.xml:19:3-70
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7fa001845a5269cfaa924e2b1d2757e4\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7fa001845a5269cfaa924e2b1d2757e4\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\27395976437a23d1361fa92ed6211789\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\27395976437a23d1361fa92ed6211789\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\adf43abfd544f7e9691f47645c845ea7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\adf43abfd544f7e9691f47645c845ea7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\05fc50e70c36165c58ca6ab614fda62a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\05fc50e70c36165c58ca6ab614fda62a\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fe1888e7d2e4e253b003f0b19b93612e\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fe1888e7d2e4e253b003f0b19b93612e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\adf43abfd544f7e9691f47645c845ea7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\adf43abfd544f7e9691f47645c845ea7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.exoplayer:exoplayer-dash:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-dash-r2.5.1.aar\f135841ed490e978a5dc03db13356ebd\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-dash-r2.5.1.aar\f135841ed490e978a5dc03db13356ebd\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-hls-r2.5.1.aar\fd78416801fc941b5e47241b8ebf5519\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-hls-r2.5.1.aar\fd78416801fc941b5e47241b8ebf5519\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-smoothstreaming-r2.5.1.aar\bc83660d88cf6cd307031ad9abc3069f\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-smoothstreaming-r2.5.1.aar\bc83660d88cf6cd307031ad9abc3069f\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-ui-r2.5.1.aar\9d796db1bfa660acaedcd6c1ae48681e\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-ui-r2.5.1.aar\9d796db1bfa660acaedcd6c1ae48681e\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-core-r2.5.1.aar\d46c598aab8c238f3db704d5c4ddae90\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:r2.5.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\exoplayer-core-r2.5.1.aar\d46c598aab8c238f3db704d5c4ddae90\AndroidManifest.xml:21:5-23:41
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\05fc50e70c36165c58ca6ab614fda62a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\05fc50e70c36165c58ca6ab614fda62a\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\fc8731a351ae071befa0191255405338\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\fc8731a351ae071befa0191255405338\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\M7edS\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\a4cec8fbb77263c31ee043fa9588b457\AndroidManifest.xml:20:5-44

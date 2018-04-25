@@ -15,7 +15,6 @@
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
@@ -26,8 +25,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="shahin.recipesapp.StepsActivity" />
-        <activity android:name="shahin.recipesapp.StepDetailsActivity" />
+        <activity
+            android:name="shahin.recipesapp.StepsActivity"
+            android:label="@string/ingredients_steps"
+            android:parentActivityName="shahin.recipesapp.MainActivity" />
+        <activity
+            android:name="shahin.recipesapp.StepDetailsActivity"
+            android:label="@string/step_details"
+            android:parentActivityName="shahin.recipesapp.StepsActivity" />
+
+        <receiver android:name="shahin.recipesapp.widget.RecipeWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/recipe_widget_info" />
+        </receiver>
+
+        <service
+            android:name="shahin.recipesapp.widget.WidgetRemoteViewsService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
     </application>
 
 </manifest>

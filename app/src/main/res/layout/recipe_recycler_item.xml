@@ -1,26 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-    <ImageView
-        android:id="@+id/iv_recipe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_10"
-        android:contentDescription="@string/image_view_recipe"
-        android:gravity="center"
-        android:src="@mipmap/ic_recipe" />
-
-    <TextView
-        android:id="@+id/tv_recipe_name"
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_step"
+        android:layout_gravity = "center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:text="@string/placeholder"
-        android:textSize="@dimen/size_20_sp"
-        android:textStyle="bold|italic" />
+        android:layout_height="250dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="@dimen/size_10_sp">
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_view_recipe"
+            android:scaleType="fitXY"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/placeholder"
+            android:textSize="@dimen/size_20_sp"
+            android:textStyle="bold|italic"
+            android:textColor="#FFFFFF"/>
+
+    </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
