@@ -19,6 +19,14 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="@dimen/margin_10"/>
 
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_recipe"
+            android:layout_gravity="center_horizontal"
+            />
+
         <com.google.android.exoplayer2.ui.SimpleExoPlayerView
             android:id="@+id/exo_player_view"
             android:layout_width="match_parent"

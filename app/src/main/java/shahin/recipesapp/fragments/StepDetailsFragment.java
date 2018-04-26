@@ -11,8 +11,11 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayer;
@@ -41,6 +44,7 @@ import shahin.recipesapp.R;
 import shahin.recipesapp.models.Step;
 
 import static shahin.recipesapp.utilities.Constants.PLAYER_CURRENT_POSITION_STATE_KEY;
+import static shahin.recipesapp.utilities.Constants.PLAYER_STATE_KEY;
 import static shahin.recipesapp.utilities.Constants.STEP_DETAILS_PARC_KEY;
 
 public class StepDetailsFragment extends Fragment{
@@ -48,6 +52,7 @@ public class StepDetailsFragment extends Fragment{
     @BindView(R.id.tv_short_description) TextView tv_short_description;
     @BindView(R.id.tv_description) TextView tv_description;
     @BindView(R.id.exo_player_view) SimpleExoPlayerView exo_player_view;
+    @BindView(R.id.iv_thumbnail) ImageView iv_thumbnail;
 
     private Step step;
 
@@ -56,6 +61,7 @@ public class StepDetailsFragment extends Fragment{
     private String videoUrl;
 
     private long exoPlayerCurrentPosition;
+    private boolean exoPlayerCurrentState;
 
     public StepDetailsFragment(){}
 
@@ -77,25 +83,41 @@ public class StepDetailsFragment extends Fragment{
 
         if(savedInstanceState!=null){
             exoPlayerCurrentPosition = savedInstanceState.getLong(PLAYER_CURRENT_POSITION_STATE_KEY);
+            exoPlayerCurrentState = savedInstanceState.getBoolean(PLAYER_STATE_KEY);
         }
 
-        if(step != null){
-                tv_short_description.setText(step.getShortDescription());
-                tv_description.setText(step.getDescription());
-                videoUrl = step.getVideoURL();
-                playMedia();
+
+        tv_short_description.setText(step.getShortDescription());
+        tv_description.setText(step.getDescription());
+
+        if(!step.getVideoURL().isEmpty()&&step.getVideoURL()!=null){
+            iv_thumbnail.setVisibility(View.GONE);
+            videoUrl = step.getVideoURL();
+            playMedia();
+        }else{
+            exo_player_view.setVisibility(View.GONE);
+            if(step.getThumbnailURL().isEmpty()||step.getThumbnailURL()==null){
+                iv_thumbnail.setImageResource(R.mipmap.ic_launcher);
+            }else{
+                Glide.with(getActivity())
+                        .load(step.getThumbnailURL())
+                        .error(R.mipmap.ic_recipe)
+                        .into(iv_thumbnail);
+            }
         }
+
+
 
         return rootView;
     }
 
     private void playMedia(){
+
         exo_player_view.setDefaultArtwork(BitmapFactory.decodeResource
                 (getResources(), R.drawable.no_vide_available));
 
         TrackSelection.Factory videoTrackSelectionFactory = new AdaptiveTrackSelection.Factory(null);
         TrackSelector trackSelector = new DefaultTrackSelector(videoTrackSelectionFactory);
-
 
         exoPlayer = ExoPlayerFactory.newSimpleInstance(getActivity(), trackSelector);
         exoPlayer.seekTo(exoPlayerCurrentPosition);
@@ -116,32 +138,50 @@ public class StepDetailsFragment extends Fragment{
         exoPlayer.setPlayWhenReady(true);
         exoPlayer.setVideoScalingMode(C.VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING);
 
-
-
     }
 
     /**
      * Release ExoPlayer.
      */
     private void releasePlayer() {
-        exoPlayer.stop();
-        exoPlayer.release();
-        exoPlayer = null;
+        if(exoPlayer!=null){
+            exoPlayer.stop();
+            exoPlayer.release();
+            exoPlayer = null;
+        }
     }
 
     @Override
-    public void onDestroy() {
-        super.onDestroy();
+    public void onPause() {
+        super.onPause();
+        releasePlayer();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
         releasePlayer();
     }
 
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
+
         exoPlayerCurrentPosition = exoPlayer.getCurrentPosition();
         outState.putLong(PLAYER_CURRENT_POSITION_STATE_KEY, exoPlayerCurrentPosition);
+
+        exoPlayerCurrentState = exoPlayer.getPlayWhenReady();
+        outState.putBoolean(PLAYER_STATE_KEY,exoPlayerCurrentState);
+
     }
 
-
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            getActivity().finish();
+        }
+        return true;
+    }
 }

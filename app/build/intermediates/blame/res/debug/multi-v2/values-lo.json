@@ -4,7 +4,7 @@
             "outputFile": "D:\\M7edShin\\Android Development\\Android Advanced Nanodegree Projects\\RecipesApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b650178a00f4b90aabaa9ed19fa5b252\\res\\values-lo\\values-lo.xml",
+                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\7396ea0c009ae1f2c44bb433d13a1e2c\\res\\values-lo\\values-lo.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\fc8731a351ae071befa0191255405338\\res\\values-lo\\values-lo.xml",
+                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\3c3710c4d8b30514c4d2e9b0f8f13084\\res\\values-lo\\values-lo.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

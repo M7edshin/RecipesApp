@@ -4,7 +4,24 @@
             "outputFile": "D:\\M7edShin\\Android Development\\Android Advanced Nanodegree Projects\\RecipesApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b650178a00f4b90aabaa9ed19fa5b252\\res\\values-ko\\values-ko.xml",
+                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\3c3710c4d8b30514c4d2e9b0f8f13084\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "30",
+                        "startColumns": "4",
+                        "startOffsets": "2509",
+                        "endColumns": "100",
+                        "endOffsets": "2605"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\7396ea0c009ae1f2c44bb433d13a1e2c\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-r2.5.1.aar\\9d796db1bfa660acaedcd6c1ae48681e\\res\\values-ko\\values-ko.xml",
+                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-r2.5.1.aar\\70df4ecc1461a9700fb10f2960925189\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -35,23 +52,6 @@
                         "startOffsets": "1746,1819,1885,1951,2014,2084,2156,2228,2302,2368",
                         "endColumns": "72,65,65,62,69,71,71,73,65,62",
                         "endOffsets": "1814,1880,1946,2009,2079,2151,2223,2297,2363,2426"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\fc8731a351ae071befa0191255405338\\res\\values-ko\\values-ko.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "30",
-                        "startColumns": "4",
-                        "startOffsets": "2509",
-                        "endColumns": "100",
-                        "endOffsets": "2605"
                     }
                 }
             ]

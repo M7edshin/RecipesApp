@@ -4,7 +4,7 @@
             "outputFile": "D:\\M7edShin\\Android Development\\Android Advanced Nanodegree Projects\\RecipesApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-da\\values-da.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b650178a00f4b90aabaa9ed19fa5b252\\res\\values-da\\values-da.xml",
+                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\7396ea0c009ae1f2c44bb433d13a1e2c\\res\\values-da\\values-da.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-r2.5.1.aar\\9d796db1bfa660acaedcd6c1ae48681e\\res\\values-da\\values-da.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,132,205,272,339,418,496,575,651,726",
-                        "endColumns": "76,72,66,66,78,77,78,75,74,64",
-                        "endOffsets": "127,200,267,334,413,491,570,646,721,786"
-                    },
-                    "to": {
-                        "startLines": "19,20,21,22,23,24,25,26,27,28",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1828,1905,1978,2045,2112,2191,2269,2348,2424,2499",
-                        "endColumns": "76,72,66,66,78,77,78,75,74,64",
-                        "endOffsets": "1900,1973,2040,2107,2186,2264,2343,2419,2494,2559"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\fc8731a351ae071befa0191255405338\\res\\values-da\\values-da.xml",
+                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\3c3710c4d8b30514c4d2e9b0f8f13084\\res\\values-da\\values-da.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -52,6 +35,23 @@
                         "startOffsets": "2643",
                         "endColumns": "100",
                         "endOffsets": "2739"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-r2.5.1.aar\\70df4ecc1461a9700fb10f2960925189\\res\\values-da\\values-da.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,132,205,272,339,418,496,575,651,726",
+                        "endColumns": "76,72,66,66,78,77,78,75,74,64",
+                        "endOffsets": "127,200,267,334,413,491,570,646,721,786"
+                    },
+                    "to": {
+                        "startLines": "19,20,21,22,23,24,25,26,27,28",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1828,1905,1978,2045,2112,2191,2269,2348,2424,2499",
+                        "endColumns": "76,72,66,66,78,77,78,75,74,64",
+                        "endOffsets": "1900,1973,2040,2107,2186,2264,2343,2419,2494,2559"
                     }
                 }
             ]
