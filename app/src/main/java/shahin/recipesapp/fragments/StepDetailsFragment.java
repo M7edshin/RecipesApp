@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.NavUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -62,9 +63,9 @@ public class StepDetailsFragment extends Fragment{
 
     private Step step;
 
-    SimpleExoPlayer exoPlayer;
+    private SimpleExoPlayer exoPlayer;
 
-    private String videoUrl;
+    private String videoUrl = "";
 
     private boolean playWhenReady;
     private int currentWindow = 0;
@@ -76,6 +77,8 @@ public class StepDetailsFragment extends Fragment{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(getActivity());
+
+        Log.v("Tag", "MyLogs: OnCreate Method is launched");
 
         if(getArguments().containsKey(STEP_DETAILS_PARC_KEY)){
             step = getArguments().getParcelable(STEP_DETAILS_PARC_KEY);
@@ -89,10 +92,13 @@ public class StepDetailsFragment extends Fragment{
         View rootView = inflater.inflate(R.layout.fragment_step_details, container, false);
         ButterKnife.bind(this, rootView);
 
+        Log.v("Tag", "MyLogs: OnCreateView Method is launched");
+
         if(savedInstanceState!=null){
             playbackPosition = savedInstanceState.getLong(PLATER_PLAYBACK_POSITION_STATE_KEY);
             playWhenReady = savedInstanceState.getBoolean(PLAYER_WHEN_READY_STATE_KEY);
             currentWindow = savedInstanceState.getInt(PLAYER_CURRENT_WINDOW_STATE_KEY);
+            Log.v("Tag", "MyLogs: " + String.valueOf(playbackPosition));
         }
 
         tv_short_description.setText(step.getShortDescription());
@@ -104,7 +110,7 @@ public class StepDetailsFragment extends Fragment{
         }else{
             exo_player_view.setVisibility(View.GONE);
             if(step.getThumbnailURL().isEmpty()||step.getThumbnailURL()==null){
-                iv_thumbnail.setImageResource(R.mipmap.ic_launcher);
+                iv_thumbnail.setImageResource(R.mipmap.ic_recipe);
             }else{
                 Glide.with(getActivity())
                         .load(step.getThumbnailURL())
@@ -115,7 +121,6 @@ public class StepDetailsFragment extends Fragment{
 
         return rootView;
     }
-
 
     private void initializePlayer() {
         exoPlayer = ExoPlayerFactory.newSimpleInstance(
@@ -138,11 +143,12 @@ public class StepDetailsFragment extends Fragment{
                 createMediaSource(uri);
     }
 
-
     @Override
     public void onStart() {
         super.onStart();
-        if (Util.SDK_INT > 23) {
+        Log.v("Tag", "MyLogs: OnStart Method is launched");
+
+        if (Util.SDK_INT > 23 && !videoUrl.isEmpty()) {
             initializePlayer();
         }
     }
@@ -150,7 +156,10 @@ public class StepDetailsFragment extends Fragment{
     @Override
     public void onResume() {
         super.onResume();
-        if ((Util.SDK_INT <= 23 || exoPlayer == null)) {
+
+        Log.v("Tag", "MyLogs: OnResume Method is launched");
+
+        if ((Util.SDK_INT <= 23 || exoPlayer == null || !videoUrl.isEmpty())) {
             initializePlayer();
         }
     }
@@ -160,30 +169,29 @@ public class StepDetailsFragment extends Fragment{
             playbackPosition = exoPlayer.getCurrentPosition();
             currentWindow = exoPlayer.getCurrentWindowIndex();
             playWhenReady = exoPlayer.getPlayWhenReady();
+            exoPlayer.stop();
             exoPlayer.release();
             exoPlayer = null;
         }
     }
 
     @Override
-    public void onPause() {
-        super.onPause();
-        if (Util.SDK_INT <= 23) {
-            releasePlayer();
-        }
-    }
-
-    @Override
     public void onStop() {
         super.onStop();
+
+        Log.v("Tag", "MyLogs: OnStop Method is launched");
+
         if (Util.SDK_INT > 23) {
             releasePlayer();
+            Log.v("Tag", "MyLogs: ExoPlayer is released");
         }
     }
 
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
+
+        Log.v("Tag", "MyLogs: onSaveInstanceState Method is launched");
 
         playbackPosition = exoPlayer.getCurrentPosition();
         playWhenReady = exoPlayer.getPlayWhenReady();
