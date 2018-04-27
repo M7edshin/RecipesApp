@@ -10,8 +10,10 @@ public class Constants {
     public static final String LINEAR_LAYOUT_MANAGER_STATE_KEY = "layout_manager_state_key";
     public static final String GRID_LAYOUT_MANAGER_STATE_KEY = "grid_manager_state_key";
 
-    public static final String PLAYER_CURRENT_POSITION_STATE_KEY = "player_current_position_state_key";
-    public static final String PLAYER_STATE_KEY = "player_state_key";
+    public static final String PLATER_PLAYBACK_POSITION_STATE_KEY = "player_playback_position_state_key";
+    public static final String PLAYER_CURRENT_WINDOW_STATE_KEY = "player_current_window_state_key";
+    public static final String PLAYER_WHEN_READY_STATE_KEY = "player_when_ready_state_key";
+
 
     public static final String NUTELLA_IMAGE_URL = "https://assets.epicurious.com/photos/54ac95e819925f464b3ac37e/master/pass/51229210_nutella-pie_1x1.jpg";
     public static final String BROWNIES_IMAGE_URL = "https://search.chow.com/thumbnail/800/600/www.chowstatic.com/assets/recipe_photos/29402_gluten_free_brownies2.jpg";

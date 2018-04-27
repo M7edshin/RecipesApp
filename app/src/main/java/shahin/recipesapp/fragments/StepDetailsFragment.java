@@ -1,5 +1,6 @@
 package shahin.recipesapp.fragments;
 
+import android.annotation.SuppressLint;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.exoplayer2.C;
+import com.google.android.exoplayer2.DefaultLoadControl;
+import com.google.android.exoplayer2.DefaultRenderersFactory;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerFactory;
@@ -25,6 +28,7 @@ import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.Timeline;
 import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
 import com.google.android.exoplayer2.source.ExtractorMediaSource;
+import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.source.TrackGroupArray;
 import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
@@ -35,6 +39,7 @@ import com.google.android.exoplayer2.ui.AspectRatioFrameLayout;
 import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
+import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
 
 
@@ -43,8 +48,9 @@ import butterknife.ButterKnife;
 import shahin.recipesapp.R;
 import shahin.recipesapp.models.Step;
 
-import static shahin.recipesapp.utilities.Constants.PLAYER_CURRENT_POSITION_STATE_KEY;
-import static shahin.recipesapp.utilities.Constants.PLAYER_STATE_KEY;
+import static shahin.recipesapp.utilities.Constants.PLATER_PLAYBACK_POSITION_STATE_KEY;
+import static shahin.recipesapp.utilities.Constants.PLAYER_CURRENT_WINDOW_STATE_KEY;
+import static shahin.recipesapp.utilities.Constants.PLAYER_WHEN_READY_STATE_KEY;
 import static shahin.recipesapp.utilities.Constants.STEP_DETAILS_PARC_KEY;
 
 public class StepDetailsFragment extends Fragment{
@@ -60,8 +66,9 @@ public class StepDetailsFragment extends Fragment{
 
     private String videoUrl;
 
-    private long exoPlayerCurrentPosition;
-    private boolean exoPlayerCurrentState;
+    private boolean playWhenReady;
+    private int currentWindow = 0;
+    private long playbackPosition = 0;
 
     public StepDetailsFragment(){}
 
@@ -73,6 +80,7 @@ public class StepDetailsFragment extends Fragment{
         if(getArguments().containsKey(STEP_DETAILS_PARC_KEY)){
             step = getArguments().getParcelable(STEP_DETAILS_PARC_KEY);
         }
+
     }
 
     @Nullable
@@ -82,10 +90,10 @@ public class StepDetailsFragment extends Fragment{
         ButterKnife.bind(this, rootView);
 
         if(savedInstanceState!=null){
-            exoPlayerCurrentPosition = savedInstanceState.getLong(PLAYER_CURRENT_POSITION_STATE_KEY);
-            exoPlayerCurrentState = savedInstanceState.getBoolean(PLAYER_STATE_KEY);
+            playbackPosition = savedInstanceState.getLong(PLATER_PLAYBACK_POSITION_STATE_KEY);
+            playWhenReady = savedInstanceState.getBoolean(PLAYER_WHEN_READY_STATE_KEY);
+            currentWindow = savedInstanceState.getInt(PLAYER_CURRENT_WINDOW_STATE_KEY);
         }
-
 
         tv_short_description.setText(step.getShortDescription());
         tv_description.setText(step.getDescription());
@@ -93,7 +101,6 @@ public class StepDetailsFragment extends Fragment{
         if(!step.getVideoURL().isEmpty()&&step.getVideoURL()!=null){
             iv_thumbnail.setVisibility(View.GONE);
             videoUrl = step.getVideoURL();
-            playMedia();
         }else{
             exo_player_view.setVisibility(View.GONE);
             if(step.getThumbnailURL().isEmpty()||step.getThumbnailURL()==null){
@@ -106,46 +113,53 @@ public class StepDetailsFragment extends Fragment{
             }
         }
 
-
-
         return rootView;
     }
 
-    private void playMedia(){
 
-        exo_player_view.setDefaultArtwork(BitmapFactory.decodeResource
-                (getResources(), R.drawable.no_vide_available));
+    private void initializePlayer() {
+        exoPlayer = ExoPlayerFactory.newSimpleInstance(
+                new DefaultRenderersFactory(getActivity()),
+                new DefaultTrackSelector(), new DefaultLoadControl());
 
-        TrackSelection.Factory videoTrackSelectionFactory = new AdaptiveTrackSelection.Factory(null);
-        TrackSelector trackSelector = new DefaultTrackSelector(videoTrackSelectionFactory);
-
-        exoPlayer = ExoPlayerFactory.newSimpleInstance(getActivity(), trackSelector);
-        exoPlayer.seekTo(exoPlayerCurrentPosition);
-
-        exo_player_view.requestFocus();
-        exo_player_view.setUseController(true);
         exo_player_view.setPlayer(exoPlayer);
-        exo_player_view.setResizeMode(AspectRatioFrameLayout.RESIZE_MODE_FILL);
 
-        String userAgent = Util.getUserAgent(getActivity(), "ExampleExoPlayer");
-        DataSource.Factory dataSource = new DefaultDataSourceFactory(getActivity(), userAgent);
+        exoPlayer.setPlayWhenReady(playWhenReady);
+        exoPlayer.seekTo(currentWindow, playbackPosition);
 
-        Uri file = Uri.parse(videoUrl);
-
-        ExtractorMediaSource extractorMediaSource = new ExtractorMediaSource(file, dataSource,
-                new DefaultExtractorsFactory() ,null, null);
-        exoPlayer.prepare(extractorMediaSource);
-        exoPlayer.setPlayWhenReady(true);
-        exoPlayer.setVideoScalingMode(C.VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING);
-
+        Uri uri = Uri.parse(videoUrl);
+        MediaSource mediaSource = buildMediaSource(uri);
+        exoPlayer.prepare(mediaSource, true, false);
     }
 
-    /**
-     * Release ExoPlayer.
-     */
+    private MediaSource buildMediaSource(Uri uri) {
+        return new ExtractorMediaSource.Factory(
+                new DefaultHttpDataSourceFactory("StepDetailsFragment")).
+                createMediaSource(uri);
+    }
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        if (Util.SDK_INT > 23) {
+            initializePlayer();
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if ((Util.SDK_INT <= 23 || exoPlayer == null)) {
+            initializePlayer();
+        }
+    }
+
     private void releasePlayer() {
-        if(exoPlayer!=null){
-            exoPlayer.stop();
+        if (exoPlayer != null) {
+            playbackPosition = exoPlayer.getCurrentPosition();
+            currentWindow = exoPlayer.getCurrentWindowIndex();
+            playWhenReady = exoPlayer.getPlayWhenReady();
             exoPlayer.release();
             exoPlayer = null;
         }
@@ -154,24 +168,30 @@ public class StepDetailsFragment extends Fragment{
     @Override
     public void onPause() {
         super.onPause();
-        releasePlayer();
+        if (Util.SDK_INT <= 23) {
+            releasePlayer();
+        }
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        releasePlayer();
+        if (Util.SDK_INT > 23) {
+            releasePlayer();
+        }
     }
 
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        exoPlayerCurrentPosition = exoPlayer.getCurrentPosition();
-        outState.putLong(PLAYER_CURRENT_POSITION_STATE_KEY, exoPlayerCurrentPosition);
+        playbackPosition = exoPlayer.getCurrentPosition();
+        playWhenReady = exoPlayer.getPlayWhenReady();
+        currentWindow = exoPlayer.getCurrentWindowIndex();
 
-        exoPlayerCurrentState = exoPlayer.getPlayWhenReady();
-        outState.putBoolean(PLAYER_STATE_KEY,exoPlayerCurrentState);
+        outState.putLong(PLATER_PLAYBACK_POSITION_STATE_KEY, playbackPosition);
+        outState.putBoolean(PLAYER_WHEN_READY_STATE_KEY,playWhenReady);
+        outState.putInt(PLAYER_CURRENT_WINDOW_STATE_KEY,currentWindow);
 
     }
 
