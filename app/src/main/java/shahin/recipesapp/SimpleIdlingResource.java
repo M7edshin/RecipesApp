@@ -3,8 +3,6 @@ package shahin.recipesapp;
 import android.support.annotation.Nullable;
 import android.support.test.espresso.IdlingResource;
 
-import com.bumptech.glide.request.ResourceCallback;
-
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class SimpleIdlingResource implements IdlingResource {

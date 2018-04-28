@@ -8,17 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import shahin.recipesapp.R;
 import shahin.recipesapp.models.Recipe;
-import shahin.recipesapp.models.Step;
 
 import static shahin.recipesapp.utilities.Constants.BROWNIES_IMAGE_URL;
 import static shahin.recipesapp.utilities.Constants.CHEESECAKE_IMAGE_URL;

@@ -10,7 +10,7 @@ public class Constants {
     public static final String LINEAR_LAYOUT_MANAGER_STATE_KEY = "layout_manager_state_key";
     public static final String GRID_LAYOUT_MANAGER_STATE_KEY = "grid_manager_state_key";
 
-    public static final String PLATER_PLAYBACK_POSITION_STATE_KEY = "player_playback_position_state_key";
+    public static final String PLAYER_PLAYBACK_POSITION_STATE_KEY = "player_playback_position_state_key";
     public static final String PLAYER_CURRENT_WINDOW_STATE_KEY = "player_current_window_state_key";
     public static final String PLAYER_WHEN_READY_STATE_KEY = "player_when_ready_state_key";
 

@@ -1,13 +1,10 @@
 package shahin.recipesapp.fragments;
 
-import android.annotation.SuppressLint;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.NavUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -15,31 +12,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.DefaultRenderersFactory;
-import com.google.android.exoplayer2.ExoPlaybackException;
-import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerFactory;
-import com.google.android.exoplayer2.PlaybackParameters;
 import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.Timeline;
-import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
 import com.google.android.exoplayer2.source.ExtractorMediaSource;
 import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.source.TrackGroupArray;
-import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
-import com.google.android.exoplayer2.trackselection.TrackSelection;
-import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
-import com.google.android.exoplayer2.trackselection.TrackSelector;
-import com.google.android.exoplayer2.ui.AspectRatioFrameLayout;
 import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
-import com.google.android.exoplayer2.upstream.DataSource;
-import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
 
@@ -49,8 +31,8 @@ import butterknife.ButterKnife;
 import shahin.recipesapp.R;
 import shahin.recipesapp.models.Step;
 
-import static shahin.recipesapp.utilities.Constants.PLATER_PLAYBACK_POSITION_STATE_KEY;
 import static shahin.recipesapp.utilities.Constants.PLAYER_CURRENT_WINDOW_STATE_KEY;
+import static shahin.recipesapp.utilities.Constants.PLAYER_PLAYBACK_POSITION_STATE_KEY;
 import static shahin.recipesapp.utilities.Constants.PLAYER_WHEN_READY_STATE_KEY;
 import static shahin.recipesapp.utilities.Constants.STEP_DETAILS_PARC_KEY;
 
@@ -83,7 +65,6 @@ public class StepDetailsFragment extends Fragment{
         if(getArguments().containsKey(STEP_DETAILS_PARC_KEY)){
             step = getArguments().getParcelable(STEP_DETAILS_PARC_KEY);
         }
-
     }
 
     @Nullable
@@ -93,13 +74,6 @@ public class StepDetailsFragment extends Fragment{
         ButterKnife.bind(this, rootView);
 
         Log.v("Tag", "MyLogs: OnCreateView Method is launched");
-
-        if(savedInstanceState!=null){
-            playbackPosition = savedInstanceState.getLong(PLATER_PLAYBACK_POSITION_STATE_KEY);
-            playWhenReady = savedInstanceState.getBoolean(PLAYER_WHEN_READY_STATE_KEY);
-            currentWindow = savedInstanceState.getInt(PLAYER_CURRENT_WINDOW_STATE_KEY);
-            Log.v("Tag", "MyLogs: " + String.valueOf(playbackPosition));
-        }
 
         tv_short_description.setText(step.getShortDescription());
         tv_description.setText(step.getDescription());
@@ -122,15 +96,29 @@ public class StepDetailsFragment extends Fragment{
         return rootView;
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        Log.v("Tag", "MyLogs: onViewCreated Method is launched");
+        if(savedInstanceState!=null){
+            playbackPosition = savedInstanceState.getLong(PLAYER_PLAYBACK_POSITION_STATE_KEY);
+            playWhenReady = savedInstanceState.getBoolean(PLAYER_WHEN_READY_STATE_KEY);
+            currentWindow = savedInstanceState.getInt(PLAYER_CURRENT_WINDOW_STATE_KEY);
+        }
+    }
+
+
     private void initializePlayer() {
-        exoPlayer = ExoPlayerFactory.newSimpleInstance(
-                new DefaultRenderersFactory(getActivity()),
-                new DefaultTrackSelector(), new DefaultLoadControl());
+        if(exoPlayer==null){
+            exoPlayer = ExoPlayerFactory.newSimpleInstance(
+                    new DefaultRenderersFactory(getActivity()),
+                    new DefaultTrackSelector(), new DefaultLoadControl());
 
-        exo_player_view.setPlayer(exoPlayer);
+            exo_player_view.setPlayer(exoPlayer);
 
-        exoPlayer.setPlayWhenReady(playWhenReady);
-        exoPlayer.seekTo(currentWindow, playbackPosition);
+            exoPlayer.setPlayWhenReady(playWhenReady);
+            exoPlayer.seekTo(currentWindow, playbackPosition);
+        }
 
         Uri uri = Uri.parse(videoUrl);
         MediaSource mediaSource = buildMediaSource(uri);
@@ -148,7 +136,7 @@ public class StepDetailsFragment extends Fragment{
         super.onStart();
         Log.v("Tag", "MyLogs: OnStart Method is launched");
 
-        if (Util.SDK_INT > 23 && !videoUrl.isEmpty()) {
+        if (Util.SDK_INT > 23) {
             initializePlayer();
         }
     }
@@ -175,6 +163,16 @@ public class StepDetailsFragment extends Fragment{
         }
     }
 
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (Util.SDK_INT <= 23) {
+            Log.e("Tag", "MyLogs: OnPause Method is launched");
+            releasePlayer();
+        }
+    }
+
     @Override
     public void onStop() {
         super.onStop();
@@ -197,10 +195,9 @@ public class StepDetailsFragment extends Fragment{
         playWhenReady = exoPlayer.getPlayWhenReady();
         currentWindow = exoPlayer.getCurrentWindowIndex();
 
-        outState.putLong(PLATER_PLAYBACK_POSITION_STATE_KEY, playbackPosition);
+        outState.putLong(PLAYER_PLAYBACK_POSITION_STATE_KEY, playbackPosition);
         outState.putBoolean(PLAYER_WHEN_READY_STATE_KEY,playWhenReady);
         outState.putInt(PLAYER_CURRENT_WINDOW_STATE_KEY,currentWindow);
-
     }
 
     @Override
@@ -213,3 +210,4 @@ public class StepDetailsFragment extends Fragment{
         return true;
     }
 }
+
