@@ -38,7 +38,4 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-intents:3.0.1'
     implementation 'com.android.support.test.espresso:espresso-idling-resource:3.0.1'
-
-    implementation 'com.evernote:android-state:1.2.1'
-    annotationProcessor 'com.evernote:android-state-processor:1.2.1'
 }
