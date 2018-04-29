@@ -4,23 +4,6 @@
             "outputFile": "D:\\M7edShin\\Android Development\\Android Advanced Nanodegree Projects\\RecipesApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-de\\values-de.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.0.aar\\90a096cbc9cbda9339af20c9ce5272ac\\res\\values-de\\values-de.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,160,263,362,462,571,682,795,906,1009,1111",
-                        "endColumns": "104,102,98,99,108,110,112,110,102,101,94",
-                        "endOffsets": "155,258,357,457,566,677,790,901,1004,1106,1201"
-                    },
-                    "to": {
-                        "startLines": "19,20,21,22,23,24,25,26,27,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1852,1957,2060,2159,2259,2368,2479,2592,2703,2806,2908",
-                        "endColumns": "104,102,98,99,108,110,112,110,102,101,94",
-                        "endOffsets": "1952,2055,2154,2254,2363,2474,2587,2698,2801,2903,2998"
-                    }
-                },
-                {
                     "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\7396ea0c009ae1f2c44bb433d13a1e2c\\res\\values-de\\values-de.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
@@ -32,9 +15,26 @@
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,210,308,420,506,611,726,803,879,961,1072,1175,1274,1385,1487,1594,1750,3003",
+                        "startOffsets": "105,210,308,420,506,611,726,803,879,961,1072,1175,1274,1385,1487,1594,1750,2708",
                         "endColumns": "104,97,111,85,104,114,76,75,81,110,102,98,110,101,106,155,101,81",
-                        "endOffsets": "205,303,415,501,606,721,798,874,956,1067,1170,1269,1380,1482,1589,1745,1847,3080"
+                        "endOffsets": "205,303,415,501,606,721,798,874,956,1067,1170,1269,1380,1482,1589,1745,1847,2785"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\M7edS\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.6.1.aar\\47aa0dbcefa22e159023a4b344e821c9\\res\\values-de\\values-de.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,132,207,278,349,430,513,604,694,769,843",
+                        "endColumns": "76,74,70,70,80,82,90,89,74,73,67",
+                        "endOffsets": "127,202,273,344,425,508,599,689,764,838,906"
+                    },
+                    "to": {
+                        "startLines": "19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1852,1929,2004,2075,2146,2227,2310,2401,2491,2566,2640",
+                        "endColumns": "76,74,70,70,80,82,90,89,74,73,67",
+                        "endOffsets": "1924,1999,2070,2141,2222,2305,2396,2486,2561,2635,2703"
                     }
                 },
                 {
@@ -49,9 +49,9 @@
                     "to": {
                         "startLines": "31",
                         "startColumns": "4",
-                        "startOffsets": "3085",
+                        "startOffsets": "2790",
                         "endColumns": "100",
-                        "endOffsets": "3181"
+                        "endOffsets": "2886"
                     }
                 }
             ]

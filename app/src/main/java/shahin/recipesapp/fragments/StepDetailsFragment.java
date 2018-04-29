@@ -147,7 +147,7 @@ public class StepDetailsFragment extends Fragment{
 
         Log.v("Tag", "MyLogs: OnResume Method is launched");
 
-        if ((Util.SDK_INT <= 23 || exoPlayer == null || !videoUrl.isEmpty())) {
+        if ((Util.SDK_INT <= 23 || exoPlayer == null)) {
             initializePlayer();
         }
     }

@@ -3,6 +3,7 @@ package shahin.recipesapp.adapters;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,41 +51,34 @@ public class RecipeRecyclerAdapter extends RecyclerView.Adapter<RecipeRecyclerAd
         switch (recipe.getName()){
             case "Nutella Pie":
                 url = NUTELLA_IMAGE_URL;
-                Glide.with(context)
-                        .load(url)
-                        .error(R.mipmap.ic_recipe)
-                        .into(holder.iv_recipe);
                 break;
 
             case "Brownies":
                 url = BROWNIES_IMAGE_URL;
-                Glide.with(context)
-                        .load(url)
-                        .error(R.mipmap.ic_recipe)
-                        .into(holder.iv_recipe);
                 break;
 
             case "Yellow Cake":
                 url = YELLOWCAKE_IMAGE_URL;
-                Glide.with(context)
-                        .load(url)
-                        .error(R.mipmap.ic_recipe)
-                        .into(holder.iv_recipe);
                 break;
 
             case "Cheesecake":
                 url = CHEESECAKE_IMAGE_URL;
-                Glide.with(context)
-                        .load(url)
-                        .error(R.mipmap.ic_recipe)
-                        .into(holder.iv_recipe);
                 break;
-
-                default:
+            default:
                     holder.iv_recipe.setImageResource(R.mipmap.ic_recipe);
         }
 
-
+        if (TextUtils.isEmpty(recipe.getImage())) {
+            Glide.with(context)
+                    .load(url)
+                    .error(R.mipmap.ic_recipe)
+                    .into(holder.iv_recipe);
+        } else {
+            Glide.with(context)
+                    .load(recipe.getImage())
+                    .error(R.mipmap.ic_recipe)
+                    .into(holder.iv_recipe);
+        }
     }
 
     @Override

@@ -2215,7 +2215,6 @@ public final class R {
      * <tr><td>fit</td><td>0</td><td></td></tr>
      * <tr><td>fixed_height</td><td>2</td><td></td></tr>
      * <tr><td>fixed_width</td><td>1</td><td></td></tr>
-     * <tr><td>zoom</td><td>4</td><td></td></tr>
      * </table>
      */
     public static final int resize_mode=0x7f020113;
@@ -3278,35 +3277,33 @@ public final class R {
     public static final int abc_vector_test=0x7f060053;
     public static final int example_appwidget_preview=0x7f060054;
     public static final int exo_controls_fastforward=0x7f060055;
-    public static final int exo_controls_fullscreen_enter=0x7f060056;
-    public static final int exo_controls_fullscreen_exit=0x7f060057;
-    public static final int exo_controls_next=0x7f060058;
-    public static final int exo_controls_pause=0x7f060059;
-    public static final int exo_controls_play=0x7f06005a;
-    public static final int exo_controls_previous=0x7f06005b;
-    public static final int exo_controls_repeat_all=0x7f06005c;
-    public static final int exo_controls_repeat_off=0x7f06005d;
-    public static final int exo_controls_repeat_one=0x7f06005e;
-    public static final int exo_controls_rewind=0x7f06005f;
-    public static final int exo_controls_shuffle=0x7f060060;
-    public static final int exo_edit_mode_logo=0x7f060061;
-    public static final int ic_launcher_background=0x7f060062;
-    public static final int ic_launcher_foreground=0x7f060063;
-    public static final int no_vide_available=0x7f060064;
-    public static final int notification_action_background=0x7f060065;
-    public static final int notification_bg=0x7f060066;
-    public static final int notification_bg_low=0x7f060067;
-    public static final int notification_bg_low_normal=0x7f060068;
-    public static final int notification_bg_low_pressed=0x7f060069;
-    public static final int notification_bg_normal=0x7f06006a;
-    public static final int notification_bg_normal_pressed=0x7f06006b;
-    public static final int notification_icon_background=0x7f06006c;
-    public static final int notification_template_icon_bg=0x7f06006d;
-    public static final int notification_template_icon_low_bg=0x7f06006e;
-    public static final int notification_tile_bg=0x7f06006f;
-    public static final int notify_panel_notification_icon_bg=0x7f060070;
-    public static final int tooltip_frame_dark=0x7f060071;
-    public static final int tooltip_frame_light=0x7f060072;
+    public static final int exo_controls_next=0x7f060056;
+    public static final int exo_controls_pause=0x7f060057;
+    public static final int exo_controls_play=0x7f060058;
+    public static final int exo_controls_previous=0x7f060059;
+    public static final int exo_controls_repeat_all=0x7f06005a;
+    public static final int exo_controls_repeat_off=0x7f06005b;
+    public static final int exo_controls_repeat_one=0x7f06005c;
+    public static final int exo_controls_rewind=0x7f06005d;
+    public static final int exo_controls_shuffle=0x7f06005e;
+    public static final int exo_edit_mode_logo=0x7f06005f;
+    public static final int ic_launcher_background=0x7f060060;
+    public static final int ic_launcher_foreground=0x7f060061;
+    public static final int no_vide_available=0x7f060062;
+    public static final int notification_action_background=0x7f060063;
+    public static final int notification_bg=0x7f060064;
+    public static final int notification_bg_low=0x7f060065;
+    public static final int notification_bg_low_normal=0x7f060066;
+    public static final int notification_bg_low_pressed=0x7f060067;
+    public static final int notification_bg_normal=0x7f060068;
+    public static final int notification_bg_normal_pressed=0x7f060069;
+    public static final int notification_icon_background=0x7f06006a;
+    public static final int notification_template_icon_bg=0x7f06006b;
+    public static final int notification_template_icon_low_bg=0x7f06006c;
+    public static final int notification_tile_bg=0x7f06006d;
+    public static final int notify_panel_notification_icon_bg=0x7f06006e;
+    public static final int tooltip_frame_dark=0x7f06006f;
+    public static final int tooltip_frame_light=0x7f060070;
   }
   public static final class id {
     public static final int ALT=0x7f070000;
@@ -3495,7 +3492,6 @@ public final class R {
     public static final int withText=0x7f0700b7;
     public static final int wrap=0x7f0700b8;
     public static final int wrap_content=0x7f0700b9;
-    public static final int zoom=0x7f0700ba;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f080000;
@@ -3536,24 +3532,22 @@ public final class R {
     public static final int activity_recipe_step_details=0x7f09001c;
     public static final int activity_steps=0x7f09001d;
     public static final int exo_playback_control_view=0x7f09001e;
-    public static final int exo_player_control_view=0x7f09001f;
-    public static final int exo_player_view=0x7f090020;
-    public static final int exo_simple_player_view=0x7f090021;
-    public static final int fragment_step_details=0x7f090022;
-    public static final int notification_action=0x7f090023;
-    public static final int notification_action_tombstone=0x7f090024;
-    public static final int notification_template_custom_big=0x7f090025;
-    public static final int notification_template_icon_group=0x7f090026;
-    public static final int notification_template_part_chronometer=0x7f090027;
-    public static final int notification_template_part_time=0x7f090028;
-    public static final int recipe_recycler_item=0x7f090029;
-    public static final int recipe_widget_layout=0x7f09002a;
-    public static final int select_dialog_item_material=0x7f09002b;
-    public static final int select_dialog_multichoice_material=0x7f09002c;
-    public static final int select_dialog_singlechoice_material=0x7f09002d;
-    public static final int step_recycler_item=0x7f09002e;
-    public static final int support_simple_spinner_dropdown_item=0x7f09002f;
-    public static final int widget_list_item=0x7f090030;
+    public static final int exo_simple_player_view=0x7f09001f;
+    public static final int fragment_step_details=0x7f090020;
+    public static final int notification_action=0x7f090021;
+    public static final int notification_action_tombstone=0x7f090022;
+    public static final int notification_template_custom_big=0x7f090023;
+    public static final int notification_template_icon_group=0x7f090024;
+    public static final int notification_template_part_chronometer=0x7f090025;
+    public static final int notification_template_part_time=0x7f090026;
+    public static final int recipe_recycler_item=0x7f090027;
+    public static final int recipe_widget_layout=0x7f090028;
+    public static final int select_dialog_item_material=0x7f090029;
+    public static final int select_dialog_multichoice_material=0x7f09002a;
+    public static final int select_dialog_singlechoice_material=0x7f09002b;
+    public static final int step_recycler_item=0x7f09002c;
+    public static final int support_simple_spinner_dropdown_item=0x7f09002d;
+    public static final int widget_list_item=0x7f09002e;
   }
   public static final class menu {
     public static final int step_activity_menu=0x7f0a0000;
@@ -6968,7 +6962,6 @@ public final class R {
      * <tr><td>fit</td><td>0</td><td></td></tr>
      * <tr><td>fixed_height</td><td>2</td><td></td></tr>
      * <tr><td>fixed_width</td><td>1</td><td></td></tr>
-     * <tr><td>zoom</td><td>4</td><td></td></tr>
      * </table>
      *
      * @attr name shahin.recipesapp:resize_mode
@@ -11229,33 +11222,33 @@ public final class R {
      */
     public static final int MenuView_subMenuArrow=8;
     /**
-     * Attributes that can be used with a PlayerControlView.
+     * Attributes that can be used with a PlaybackControlView.
      * <p>Includes the following attributes:</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PlayerControlView_controller_layout_id shahin.recipesapp:controller_layout_id}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerControlView_fastforward_increment shahin.recipesapp:fastforward_increment}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerControlView_repeat_toggle_modes shahin.recipesapp:repeat_toggle_modes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerControlView_rewind_increment shahin.recipesapp:rewind_increment}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerControlView_show_shuffle_button shahin.recipesapp:show_shuffle_button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerControlView_show_timeout shahin.recipesapp:show_timeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PlaybackControlView_controller_layout_id shahin.recipesapp:controller_layout_id}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PlaybackControlView_fastforward_increment shahin.recipesapp:fastforward_increment}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PlaybackControlView_repeat_toggle_modes shahin.recipesapp:repeat_toggle_modes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PlaybackControlView_rewind_increment shahin.recipesapp:rewind_increment}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PlaybackControlView_show_shuffle_button shahin.recipesapp:show_shuffle_button}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PlaybackControlView_show_timeout shahin.recipesapp:show_timeout}</code></td><td></td></tr>
      * </table>
-     * @see #PlayerControlView_controller_layout_id
-     * @see #PlayerControlView_fastforward_increment
-     * @see #PlayerControlView_repeat_toggle_modes
-     * @see #PlayerControlView_rewind_increment
-     * @see #PlayerControlView_show_shuffle_button
-     * @see #PlayerControlView_show_timeout
+     * @see #PlaybackControlView_controller_layout_id
+     * @see #PlaybackControlView_fastforward_increment
+     * @see #PlaybackControlView_repeat_toggle_modes
+     * @see #PlaybackControlView_rewind_increment
+     * @see #PlaybackControlView_show_shuffle_button
+     * @see #PlaybackControlView_show_timeout
      */
-    public static final int[] PlayerControlView={
+    public static final int[] PlaybackControlView={
         0x7f020075, 0x7f020090, 0x7f020112, 0x7f020115, 
         0x7f020125, 0x7f020126
       };
     /**
      * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#controller_layout_id}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
+     * attribute's value can be found in the {@link #PlaybackControlView} array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11264,19 +11257,19 @@ public final class R {
      *
      * @attr name shahin.recipesapp:controller_layout_id
      */
-    public static final int PlayerControlView_controller_layout_id=0;
+    public static final int PlaybackControlView_controller_layout_id=0;
     /**
      * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#fastforward_increment}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
+     * attribute's value can be found in the {@link #PlaybackControlView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
      * @attr name shahin.recipesapp:fastforward_increment
      */
-    public static final int PlayerControlView_fastforward_increment=1;
+    public static final int PlaybackControlView_fastforward_increment=1;
     /**
      * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#repeat_toggle_modes}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
+     * attribute's value can be found in the {@link #PlaybackControlView} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -11291,272 +11284,35 @@ public final class R {
      *
      * @attr name shahin.recipesapp:repeat_toggle_modes
      */
-    public static final int PlayerControlView_repeat_toggle_modes=2;
+    public static final int PlaybackControlView_repeat_toggle_modes=2;
     /**
      * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#rewind_increment}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
+     * attribute's value can be found in the {@link #PlaybackControlView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
      * @attr name shahin.recipesapp:rewind_increment
      */
-    public static final int PlayerControlView_rewind_increment=3;
+    public static final int PlaybackControlView_rewind_increment=3;
     /**
      * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#show_shuffle_button}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
+     * attribute's value can be found in the {@link #PlaybackControlView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
      * @attr name shahin.recipesapp:show_shuffle_button
      */
-    public static final int PlayerControlView_show_shuffle_button=4;
+    public static final int PlaybackControlView_show_shuffle_button=4;
     /**
      * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#show_timeout}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
+     * attribute's value can be found in the {@link #PlaybackControlView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
      * @attr name shahin.recipesapp:show_timeout
      */
-    public static final int PlayerControlView_show_timeout=5;
-    /**
-     * Attributes that can be used with a PlayerView.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PlayerView_auto_show shahin.recipesapp:auto_show}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_controller_layout_id shahin.recipesapp:controller_layout_id}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_default_artwork shahin.recipesapp:default_artwork}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_fastforward_increment shahin.recipesapp:fastforward_increment}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_hide_during_ads shahin.recipesapp:hide_during_ads}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_hide_on_touch shahin.recipesapp:hide_on_touch}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_player_layout_id shahin.recipesapp:player_layout_id}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_repeat_toggle_modes shahin.recipesapp:repeat_toggle_modes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_resize_mode shahin.recipesapp:resize_mode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_rewind_increment shahin.recipesapp:rewind_increment}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_show_shuffle_button shahin.recipesapp:show_shuffle_button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_show_timeout shahin.recipesapp:show_timeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_shutter_background_color shahin.recipesapp:shutter_background_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_surface_type shahin.recipesapp:surface_type}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_use_artwork shahin.recipesapp:use_artwork}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_use_controller shahin.recipesapp:use_controller}</code></td><td></td></tr>
-     * </table>
-     * @see #PlayerView_auto_show
-     * @see #PlayerView_controller_layout_id
-     * @see #PlayerView_default_artwork
-     * @see #PlayerView_fastforward_increment
-     * @see #PlayerView_hide_during_ads
-     * @see #PlayerView_hide_on_touch
-     * @see #PlayerView_player_layout_id
-     * @see #PlayerView_repeat_toggle_modes
-     * @see #PlayerView_resize_mode
-     * @see #PlayerView_rewind_increment
-     * @see #PlayerView_show_shuffle_button
-     * @see #PlayerView_show_timeout
-     * @see #PlayerView_shutter_background_color
-     * @see #PlayerView_surface_type
-     * @see #PlayerView_use_artwork
-     * @see #PlayerView_use_controller
-     */
-    public static final int[] PlayerView={
-        0x7f020033, 0x7f020075, 0x7f020079, 0x7f020090, 
-        0x7f02009f, 0x7f0200a0, 0x7f020105, 0x7f020112, 
-        0x7f020113, 0x7f020115, 0x7f020125, 0x7f020126, 
-        0x7f020127, 0x7f020139, 0x7f020167, 0x7f020168
-      };
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#auto_show}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name shahin.recipesapp:auto_show
-     */
-    public static final int PlayerView_auto_show=0;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#controller_layout_id}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name shahin.recipesapp:controller_layout_id
-     */
-    public static final int PlayerView_controller_layout_id=1;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#default_artwork}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name shahin.recipesapp:default_artwork
-     */
-    public static final int PlayerView_default_artwork=2;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#fastforward_increment}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be an integer value, such as "<code>100</code>".
-     *
-     * @attr name shahin.recipesapp:fastforward_increment
-     */
-    public static final int PlayerView_fastforward_increment=3;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#hide_during_ads}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name shahin.recipesapp:hide_during_ads
-     */
-    public static final int PlayerView_hide_during_ads=4;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#hide_on_touch}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name shahin.recipesapp:hide_on_touch
-     */
-    public static final int PlayerView_hide_on_touch=5;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#player_layout_id}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name shahin.recipesapp:player_layout_id
-     */
-    public static final int PlayerView_player_layout_id=6;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#repeat_toggle_modes}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>Must be one or more (separated by '|') of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>2</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>one</td><td>1</td><td></td></tr>
-     * </table>
-     *
-     * @attr name shahin.recipesapp:repeat_toggle_modes
-     */
-    public static final int PlayerView_repeat_toggle_modes=7;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#resize_mode}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>fill</td><td>3</td><td></td></tr>
-     * <tr><td>fit</td><td>0</td><td></td></tr>
-     * <tr><td>fixed_height</td><td>2</td><td></td></tr>
-     * <tr><td>fixed_width</td><td>1</td><td></td></tr>
-     * <tr><td>zoom</td><td>4</td><td></td></tr>
-     * </table>
-     *
-     * @attr name shahin.recipesapp:resize_mode
-     */
-    public static final int PlayerView_resize_mode=8;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#rewind_increment}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be an integer value, such as "<code>100</code>".
-     *
-     * @attr name shahin.recipesapp:rewind_increment
-     */
-    public static final int PlayerView_rewind_increment=9;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#show_shuffle_button}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name shahin.recipesapp:show_shuffle_button
-     */
-    public static final int PlayerView_show_shuffle_button=10;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#show_timeout}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be an integer value, such as "<code>100</code>".
-     *
-     * @attr name shahin.recipesapp:show_timeout
-     */
-    public static final int PlayerView_show_timeout=11;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#shutter_background_color}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     *
-     * @attr name shahin.recipesapp:shutter_background_color
-     */
-    public static final int PlayerView_shutter_background_color=12;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#surface_type}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>surface_view</td><td>1</td><td></td></tr>
-     * <tr><td>texture_view</td><td>2</td><td></td></tr>
-     * </table>
-     *
-     * @attr name shahin.recipesapp:surface_type
-     */
-    public static final int PlayerView_surface_type=13;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#use_artwork}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name shahin.recipesapp:use_artwork
-     */
-    public static final int PlayerView_use_artwork=14;
-    /**
-     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#use_controller}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name shahin.recipesapp:use_controller
-     */
-    public static final int PlayerView_use_controller=15;
+    public static final int PlaybackControlView_show_timeout=5;
     /**
      * Attributes that can be used with a PopupWindow.
      * <p>Includes the following attributes:</p>
@@ -12156,6 +11912,242 @@ public final class R {
      * @attr name shahin.recipesapp:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
+    /**
+     * Attributes that can be used with a SimpleExoPlayerView.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_auto_show shahin.recipesapp:auto_show}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_controller_layout_id shahin.recipesapp:controller_layout_id}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_default_artwork shahin.recipesapp:default_artwork}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_fastforward_increment shahin.recipesapp:fastforward_increment}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_hide_during_ads shahin.recipesapp:hide_during_ads}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_hide_on_touch shahin.recipesapp:hide_on_touch}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_player_layout_id shahin.recipesapp:player_layout_id}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_repeat_toggle_modes shahin.recipesapp:repeat_toggle_modes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_resize_mode shahin.recipesapp:resize_mode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_rewind_increment shahin.recipesapp:rewind_increment}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_show_shuffle_button shahin.recipesapp:show_shuffle_button}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_show_timeout shahin.recipesapp:show_timeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_shutter_background_color shahin.recipesapp:shutter_background_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_surface_type shahin.recipesapp:surface_type}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_use_artwork shahin.recipesapp:use_artwork}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleExoPlayerView_use_controller shahin.recipesapp:use_controller}</code></td><td></td></tr>
+     * </table>
+     * @see #SimpleExoPlayerView_auto_show
+     * @see #SimpleExoPlayerView_controller_layout_id
+     * @see #SimpleExoPlayerView_default_artwork
+     * @see #SimpleExoPlayerView_fastforward_increment
+     * @see #SimpleExoPlayerView_hide_during_ads
+     * @see #SimpleExoPlayerView_hide_on_touch
+     * @see #SimpleExoPlayerView_player_layout_id
+     * @see #SimpleExoPlayerView_repeat_toggle_modes
+     * @see #SimpleExoPlayerView_resize_mode
+     * @see #SimpleExoPlayerView_rewind_increment
+     * @see #SimpleExoPlayerView_show_shuffle_button
+     * @see #SimpleExoPlayerView_show_timeout
+     * @see #SimpleExoPlayerView_shutter_background_color
+     * @see #SimpleExoPlayerView_surface_type
+     * @see #SimpleExoPlayerView_use_artwork
+     * @see #SimpleExoPlayerView_use_controller
+     */
+    public static final int[] SimpleExoPlayerView={
+        0x7f020033, 0x7f020075, 0x7f020079, 0x7f020090, 
+        0x7f02009f, 0x7f0200a0, 0x7f020105, 0x7f020112, 
+        0x7f020113, 0x7f020115, 0x7f020125, 0x7f020126, 
+        0x7f020127, 0x7f020139, 0x7f020167, 0x7f020168
+      };
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#auto_show}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name shahin.recipesapp:auto_show
+     */
+    public static final int SimpleExoPlayerView_auto_show=0;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#controller_layout_id}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name shahin.recipesapp:controller_layout_id
+     */
+    public static final int SimpleExoPlayerView_controller_layout_id=1;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#default_artwork}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name shahin.recipesapp:default_artwork
+     */
+    public static final int SimpleExoPlayerView_default_artwork=2;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#fastforward_increment}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name shahin.recipesapp:fastforward_increment
+     */
+    public static final int SimpleExoPlayerView_fastforward_increment=3;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#hide_during_ads}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name shahin.recipesapp:hide_during_ads
+     */
+    public static final int SimpleExoPlayerView_hide_during_ads=4;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#hide_on_touch}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name shahin.recipesapp:hide_on_touch
+     */
+    public static final int SimpleExoPlayerView_hide_on_touch=5;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#player_layout_id}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name shahin.recipesapp:player_layout_id
+     */
+    public static final int SimpleExoPlayerView_player_layout_id=6;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#repeat_toggle_modes}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>Must be one or more (separated by '|') of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>all</td><td>2</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>one</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name shahin.recipesapp:repeat_toggle_modes
+     */
+    public static final int SimpleExoPlayerView_repeat_toggle_modes=7;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#resize_mode}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>fill</td><td>3</td><td></td></tr>
+     * <tr><td>fit</td><td>0</td><td></td></tr>
+     * <tr><td>fixed_height</td><td>2</td><td></td></tr>
+     * <tr><td>fixed_width</td><td>1</td><td></td></tr>
+     * </table>
+     *
+     * @attr name shahin.recipesapp:resize_mode
+     */
+    public static final int SimpleExoPlayerView_resize_mode=8;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#rewind_increment}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name shahin.recipesapp:rewind_increment
+     */
+    public static final int SimpleExoPlayerView_rewind_increment=9;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#show_shuffle_button}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name shahin.recipesapp:show_shuffle_button
+     */
+    public static final int SimpleExoPlayerView_show_shuffle_button=10;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#show_timeout}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name shahin.recipesapp:show_timeout
+     */
+    public static final int SimpleExoPlayerView_show_timeout=11;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#shutter_background_color}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     *
+     * @attr name shahin.recipesapp:shutter_background_color
+     */
+    public static final int SimpleExoPlayerView_shutter_background_color=12;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#surface_type}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>none</td><td>0</td><td></td></tr>
+     * <tr><td>surface_view</td><td>1</td><td></td></tr>
+     * <tr><td>texture_view</td><td>2</td><td></td></tr>
+     * </table>
+     *
+     * @attr name shahin.recipesapp:surface_type
+     */
+    public static final int SimpleExoPlayerView_surface_type=13;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#use_artwork}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name shahin.recipesapp:use_artwork
+     */
+    public static final int SimpleExoPlayerView_use_artwork=14;
+    /**
+     * <p>This symbol is the offset where the {@link shahin.recipesapp.R.attr#use_controller}
+     * attribute's value can be found in the {@link #SimpleExoPlayerView} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name shahin.recipesapp:use_controller
+     */
+    public static final int SimpleExoPlayerView_use_controller=15;
     /**
      * Attributes that can be used with a Spinner.
      * <p>Includes the following attributes:</p>
