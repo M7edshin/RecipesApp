@@ -26,15 +26,15 @@ public class RecipeWidgetProvider extends AppWidgetProvider {
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
-        for(int i = 0; i < appWidgetIds.length; i ++) {
+        for (int appWidgetId : appWidgetIds) {
             Intent intent = new Intent(context, WidgetRemoteViewsService.class);
-            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetIds[i]);
+            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
             intent.putExtra("Random", Math.random() * 1000);
             intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));
             RemoteViews rv = new RemoteViews(context.getPackageName(), R.layout.recipe_widget_layout);
-            rv.setRemoteAdapter( R.id.lv_widget_recipe_steps, intent);
-            appWidgetManager.updateAppWidget(appWidgetIds[i], rv);
-            appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetIds[i], R.id.lv_widget_recipe_steps);
+            rv.setRemoteAdapter(R.id.lv_widget_recipe_steps, intent);
+            appWidgetManager.updateAppWidget(appWidgetId, rv);
+            appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetId, R.id.lv_widget_recipe_steps);
         }
         super.onUpdate(context, appWidgetManager, appWidgetIds);
     }

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -78,12 +79,12 @@ public class StepDetailsFragment extends Fragment{
         tv_short_description.setText(step.getShortDescription());
         tv_description.setText(step.getDescription());
 
-        if(!step.getVideoURL().isEmpty()&&step.getVideoURL()!=null){
+        if(!TextUtils.isEmpty(step.getVideoURL())&&step.getVideoURL()!=null){
             iv_thumbnail.setVisibility(View.GONE);
             videoUrl = step.getVideoURL();
         }else{
             exo_player_view.setVisibility(View.GONE);
-            if(step.getThumbnailURL().isEmpty()||step.getThumbnailURL()==null){
+            if(!TextUtils.isEmpty(step.getThumbnailURL())||step.getThumbnailURL()==null){
                 iv_thumbnail.setImageResource(R.mipmap.ic_recipe);
             }else{
                 Glide.with(getActivity())
