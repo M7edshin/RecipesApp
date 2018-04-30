@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -35,7 +36,9 @@ import static shahin.recipesapp.utilities.Constants.STEP_DETAILS_PARC_KEY;
 
 public class StepsActivity extends AppCompatActivity {
 
+    @Nullable
     @BindView(R.id.rv_steps) RecyclerView rv_steps;
+    @Nullable
     @BindView(R.id.linear_layout_checkbox) LinearLayout linear_layout_checkbox;
 
     ArrayList<Ingredient> ingredientArrayList;
