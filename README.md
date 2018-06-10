@@ -1,7 +1,7 @@
 # Baking App
 _______________________________________________________________________________________________________________________________
 
-# My Project Completion
+# Project Completion
 
 ## Screenshots
 ![alt text](https://i.imgur.com/HxdC2kg.jpg?1)![alt text](https://i.imgur.com/agIhMr4.png?1) ![alt text](https://i.imgur.com/cgQev65.png?1)
