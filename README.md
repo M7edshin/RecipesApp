@@ -1,4 +1,27 @@
 # Baking App
+_______________________________________________________________________________________________________________________________
+
+# My Project Completion
+
+## Screenshots
+![alt text](https://i.imgur.com/HxdC2kg.jpg?1)![alt text](https://i.imgur.com/agIhMr4.png?1) ![alt text](https://i.imgur.com/cgQev65.png?1)
+![alt text](https://i.imgur.com/1HDMNWg.jpg?1)
+
+## Libraries & Implementations & Additional Content
+* [ButterKnife](https://github.com/JakeWharton/butterknife) 
+
+* [Retrofit](http://square.github.io/retrofit/) 
+
+* [Gson](https://github.com/google/gson) 
+
+* [ExoPlayer](https://github.com/google/ExoPlayer)
+
+* [Glide](https://github.com/bumptech/glide) 
+
+* [CardView](https://github.com/codepath/android_guides/wiki/Using-the-CardView) 
+
+* [Glide](https://github.com/bumptech/glide)
+_______________________________________________________________________________________________________________________________
 
 ## Project Overview
 
@@ -30,24 +53,3 @@ Don’t assume that all steps of the recipe have a video. Some may have a video,
 
 One of the skills you will demonstrate in this project is how to handle unexpected input in your data -- 
 professional developers often cannot expect polished JSON data when building an app.
-________________________________________________________________________________________________________________________________
-# My Project Completion
-
-## Screenshots
-![alt text](https://i.imgur.com/HxdC2kg.jpg?1)![alt text](https://i.imgur.com/agIhMr4.png?1) ![alt text](https://i.imgur.com/cgQev65.png?1)
-![alt text](https://i.imgur.com/1HDMNWg.jpg?1)
-
-## Libraries & Implementations & Additional Content
-* [ButterKnife](https://github.com/JakeWharton/butterknife) 
-
-* [Retrofit](http://square.github.io/retrofit/) 
-
-* [Gson](https://github.com/google/gson) 
-
-* [ExoPlayer](https://github.com/google/ExoPlayer)
-
-* [Glide](https://github.com/bumptech/glide) 
-
-* [CardView](https://github.com/codepath/android_guides/wiki/Using-the-CardView) 
-
-* [Glide](https://github.com/bumptech/glide)
